@@ -1,2 +1,2 @@
-const homeRoute = "home";
-const deeplinkDetailRoute = "deeplinkdetail";
+final homeRoute = "home".toLowerCase();
+final roomDetailRoute = "roomDetailScreen".toLowerCase();

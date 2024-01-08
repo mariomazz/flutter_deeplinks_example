@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class DeepLinkDetailScreen extends StatelessWidget {
-  const DeepLinkDetailScreen({super.key});
+class RoomDetailScreen extends StatelessWidget {
+  const RoomDetailScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

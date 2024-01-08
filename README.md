@@ -1,16 +1,10 @@
 # flutter_deeplinks_example
 
-A new Flutter project.
-
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+deeplinks starting commands:
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+   IOS: /usr/bin/xcrun simctl openurl booted "com.example.flutterDeeplinksExample://home-roomDetailScreen"
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+   ANDROID: adb shell am start -d "com.example.flutterdeeplinksexample://home-roomDetailScreen"

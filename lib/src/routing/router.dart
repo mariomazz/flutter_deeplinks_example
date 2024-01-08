@@ -1,5 +1,5 @@
 import 'package:asf_flutter_common/asf_flutter_common.dart';
-import 'package:flutter_deeplinks_example/src/common/widgets/screens/deeplink_detail.dart';
+import 'package:flutter_deeplinks_example/src/common/widgets/screens/room_detail_screen.dart';
 import 'package:flutter_deeplinks_example/src/routing/routes.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -22,11 +22,11 @@ GoRouter goRouter(GoRouterRef ref) {
         },
         routes: [
           GoRoute(
-            path: deeplinkDetailRoute,
+            path: roomDetailRoute,
             pageBuilder: (ctx, state) {
               return buildPageWithFadeTransition(
                 state: state,
-                child: const DeepLinkDetailScreen(),
+                child: const RoomDetailScreen(),
                 context: ctx,
               );
             },
