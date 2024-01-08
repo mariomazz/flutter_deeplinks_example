@@ -1,2 +1,2 @@
-final homeRoute = "home".toLowerCase();
-final roomDetailRoute = "roomDetailScreen".toLowerCase();
+const homeRoute = "home";
+const roomDetailRoute = "roomDetailScreen";

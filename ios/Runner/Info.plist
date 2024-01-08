@@ -28,7 +28,7 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>home-roomDetailScreen</string>
+			<string>home.roomDetailScreen</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>com.example.flutterDeeplinksExample</string>

@@ -10,8 +10,15 @@ Future<void> main() async {
   final goRouter = rivContainer.read(goRouterProvider);
 
   rivContainer.read(deeplinksServiceProvider).addListener((value) async {
-    await Future.delayed(const Duration(milliseconds: 500), () {
-      goRouter.push("/${value.host.replaceAll("-", "/")}");
+    // locale deeplinks managment
+    await Future.delayed(const Duration(milliseconds: 500), () async {
+      final queryParameters = Map<String, String>.from(value.queryParameters);
+      final isLocalDeeplink = bool.tryParse(queryParameters["local"]??'..')??false;
+      if(isLocalDeeplink){
+        await goRouter.push("/${value.host.replaceAll(".", "/")}");
+      }else{
+        await goRouter.push("/${value.path}");
+      }
     });
   });
 
